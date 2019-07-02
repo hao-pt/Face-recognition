@@ -19,3 +19,5 @@ Team member:
 
 In demo1, we use SSD for detecting object. We also use image enhancement resolution likes Ganerative Aversarial Network (GAN) for doing this task. Particularly, we just enhance image resolution for image with low resolution. We didn't integrate this process into our system because GAN take a long time to enhance image resolution.
 In demo2, we use Multi-task CNN for detecting object. Literally, Multi-task CNN is better SSD because it can capture object (face) in various scales, light conditions, head views nd even occlusion. 
+
+Source code, you can click on our report to access to download link.
