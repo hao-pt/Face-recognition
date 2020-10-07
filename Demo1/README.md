@@ -1,4 +1,4 @@
-> Detailed report: [DEMO-1-Report.pdf](Documents/DEMO-1-Report.pdf).    
+> Detailed report: [DEMO-1-Report.pdf](../Documents/DEMO-1-Report.pdf).    
 
 # Folder structure:
 `dataset`: training dataset which folder name is name/identity of a object.
@@ -113,3 +113,27 @@ python recognize.py -i path/to/video
         -l ./output/le.pickle \ # labels
         -c 0.5 # face threshold
 ```
+
+# References:
+
+[1] Blog: Face detection. Adrian. Source: https://www.pyimagesearch.com/2018/02/26/face-detection-with-opencv-and-deeplearning/
+
+[2] Blog: Face recognition using dlib. Adrian. Source:
+https://www.pyimagesearch.com/2018/06/18/face-recognition-with-opencv-python-anddeep-learning/
+
+[3] Blog: OpenCV face recognition. Adrian. Source: https://www.pyimagesearch.com/2018/09/24/opencv-face-recognition/
+
+[4] Dlib library by Davis King. Source: http://dlib.net/
+
+[5] Blog: Facial landmark. Adrian. Source: https://www.learnopencv.com/facemark-faciallandmark-detection-using-opencv/
+
+[6] Face alignment with OpenCV. Source: https://www.pyimagesearch.com/2017/05/22/face-alignment-with-opencv-and-python/
+
+[7] OpenFace library. Source: https://cmusatyalab.github.io/openface/
+
+[8] Face recognition by Adam Geitgey. Source:
+https://github.com/ageitgey/face_recognition
+
+[9] Blog: Machine Learning is Fun! Part 4: Modern Face Recognition with Deep Learning. Adam Geitgey. Source: https://medium.com/@ageitgey/machine-learning-is-fun-part-4-modern-face-recognition-with-deep-learning-c3cffc121d78
+
+[10] Image Super-Resolution (ISR). Source: https://github.com/idealo/image-superresolution
