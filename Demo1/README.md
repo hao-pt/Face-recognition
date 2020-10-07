@@ -1,11 +1,20 @@
 > Detailed report: [DEMO-1-Report.pdf](../Documents/DEMO-1-Report.pdf).    
 
+
+Method:
+- Step 0 (Optional): enhance image resolution by ISR [10] before do following steps. 
+- Step 1: Detect face in an input image by SSD [1, 3]
+- Step 2: Find facial landmarks and align face [5, 6]
+- Step 3: Extract 128-d embedding vector for each objects [7,8]
+- Step 4: Train SVM on output embedding vectors for dataset 
+- Step 5: Do face recognition and output results.
+
 # Folder structure:
 `dataset`: training dataset which folder name is name/identity of a object.
 
 `face_detection_model`: stores model configuration and pretrained weights of SSD.
 
-`ISR`: image super resolution module. We didnt integrate it into out source because ISR took long time to produre results. To play with it: 
+`ISR`: image super resolution module [10]. We didnt integrate it into out source because ISR took long time to produre results. To play with it: 
 - Firstly, you need to clone ISR: `git clone https://github.com/idealo/image-super-resolution` and use [image_super_resolution.py](ISR/image_super_resolution.py) script to run.
 - [Pretrained model](ISR/rdn-C6-D20-G64-G064-x2_ArtefactCancelling_epoch219.hdf5) are also provided.
 

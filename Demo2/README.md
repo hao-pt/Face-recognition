@@ -1,7 +1,13 @@
 > Detailed report: [DEMO-2-Report.pdf](../Documents/DEMO-2-Report.pdf)
 
 This demo utilized MTCNN instead of SSD to capture objects with variety of scales, illumination, viewpoints, etc.
-Other procedures are the same as [Demo1](../Demo1). 
+Other procedures are the same as [Demo1](../Demo1) but facial landmarks & alignment is excluded in implementation.
+
+Method:
+- Step 1: Detect face in an input image by MTCNN
+- Step 2: Extract 128-d embedding vector for each objects [1]
+- Step 3: Train SVM on output embedding vectors for dataset [4]
+- Step 4: Do face recognition and output results.
 
 # Folder structure:
 `Input`: containes 25 test images (1100x500)
@@ -20,6 +26,7 @@ Other procedures are the same as [Demo1](../Demo1).
 - `recognize_faces.py`: wrap up all procedures to detect, extract embeddings, recognize object and display output.
 
 # Dataset:
+We used goolge crawler to collect and download data automatically [5] [6].
 <table>
     <tr>
         <th>Object</th>
