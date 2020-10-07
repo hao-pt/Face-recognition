@@ -41,9 +41,9 @@ For **human detector**:
 
 - In [Demo2](./Demo2), we used Multi-task CNN for detecting object. Literally, Multi-task CNN is better SSD because it can capture objects (faces) in various scales, light conditions, head views and even occlusion.
 
-For **facial landmark and alignment**, this step was called "data normalization" to identify geometric structure of face and do some alignment of the face based on AFFINE transformation liked translation, scale and rotation to increase accuracy of recognition because face of the same object may vary a lot in direction, scale, viewpoint, etc. Landmark is just facial keypoints that captures the key structure of face before doing face alignment. There are 2 implementation of facial landmarks: 68 landmark points and 5 landmark points provided by Davis King in `Dlib` library.
+For **facial landmark and alignment**, this step was called "data normalization" to identify geometric structure of face and do some alignment of the face based on AFFINE transformation liked translation, scale and rotation to increase accuracy of recognition because face of the same object may vary a lot in direction, scale, viewpoint, etc. Facial landmarks are just facial keypoints that capture the key structure of face before doing face alignment. There are 2 implementation of facial landmarks: 68 landmark points and 5 landmark points provided by Davis King in `Dlib` library.
 
-For **embedding image**: we used pretrained OpenFace models in OpenCV to extract 128-d embedding vector of a face to discriminate objects in different classes where each class is a distintive identity (e.g. name, ID, etc) belonging to 1 object.
+For **embedding image**: we used pretrained OpenFace model in OpenCV to extract 128-d embedding vector of a face to discriminate it with objects in different classes where each class is a distintive identity (e.g. name, ID, etc) belonging to 1 object.
 
 For **classification**, output embeddings were fed to SVM classifier to recognize objects.
 
