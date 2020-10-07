@@ -36,11 +36,12 @@ Team members:
 ## Basic procedures:
 ![Model_Diagram](./Model_Diagram.png)
 
-In demo1, we use SSD for detecting object. We also use image enhancement resolution likes Ganerative Aversarial Network (GAN) for doing this task. Particularly, we just enhance image resolution for image with low resolution. We didn't integrate this process into our system because GAN take a long time to enhance image resolution.
-In demo2, we use Multi-task CNN for detecting object. Literally, Multi-task CNN is better SSD because it can capture object (face) in various scales, light conditions, head views nd even occlusion. 
+In ![Demo1](./Demo1), we use SSD for detecting object. We also use image enhancement resolution likes Ganerative Aversarial Network (GAN) for doing this task. Particularly, we just enhance image resolution for image with low resolution. We didn't integrate this process into our system because GAN take a long time to enhance image resolution.
+
+In ![Demo2](./Demo2), we use Multi-task CNN for detecting object. Literally, Multi-task CNN is better SSD because it can capture object (face) in various scales, light conditions, head views nd even occlusion. 
 
 ## Source code
-You can click at corressponding source liked ![Demo1](./Demo1) or ![Demo2](./Demo2)
+You can click at corresponding source liked ![Demo1](./Demo1) or ![Demo2](./Demo2).
 
 ## Reference:
 [1] Wheeler, Frederick W., Richard L. Weiss, and Peter H. Tu. "Face recognition at a distance system for surveillance applications." 2010 Fourth IEEE International Conference on Biometrics: Theory, Applications and Systems (BTAS). IEEE, 2010.
