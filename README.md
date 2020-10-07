@@ -41,7 +41,7 @@ In [Demo1](./Demo1), we adopted SSD for detecting object. We also used image enh
 In [Demo2](./Demo2), we used Multi-task CNN for detecting object. Literally, Multi-task CNN is better SSD because it can capture objects (faces) in various scales, light conditions, head views and even occlusion. 
 
 ## Source code
-You can click at corresponding source liked [Demo1](./Demo1) or [Demo2](./Demo2) where each has its own REAMDE for clarification.
+You can click at corresponding source liked [Demo1](./Demo1) or [Demo2](./Demo2) where each has its own README.md for clarification.
 
 ## Reference:
 [1] Wheeler, Frederick W., Richard L. Weiss, and Peter H. Tu. "Face recognition at a distance system for surveillance applications." 2010 Fourth IEEE International Conference on Biometrics: Theory, Applications and Systems (BTAS). IEEE, 2010.
