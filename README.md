@@ -7,7 +7,7 @@ Rigorous reports for FRAD: [FRAD_report.pdf](./Documents/FRAD_report.pdf) and [F
 
 There are 2 demos:
 - [Demo1](./Demo1/): It used for presentation at class. We trained model with small dataset. We used Single Shot Detector (SSD) model with ResNet architecture for detecting object. For more details, please check out our report at [DEMO-1-Report.pdf](./Documents/DEMO-1-Report.pdf).
-- [Demo2](./Demo2/): We improved the performance for face detection at long distance and various scale, light condition by utilizing Multi-task CNN. After that, we trained SVM classifier on large dataset which was collected by us. This dataset cover some characters in "Avenger: Infinity war" movie such as: Black window, Black Panther, Bruce Banner,... Why we choose them because Avenger video has a lot of point of views, scales and light conditions. For more details, please check out our report at [DEMO-2-Report.pdf](./Documents/DEMO-2-Report.pdf).
+- [Demo2](./Demo2/): We improved the performance for face detection at long distance and various scale, light condition by utilizing Multi-task CNN. After that, we trained SVM classifier on large dataset which was collected by us. This dataset contains some characters in "Avenger: Infinity war" movie such as: Black window, Black Panther, Bruce Banner,... Why we choose them because Avenger video has a lot of point of views, scales and light conditions. For more details, please check out our report at [DEMO-2-Report.pdf](./Documents/DEMO-2-Report.pdf).
 
 Team members:
 <table>
@@ -39,9 +39,9 @@ Team members:
 For **face detection**:
 - In [Demo1](./Demo1), we adopted SSD for detecting object. We also used image enhancement resolution likes Ganerative Aversarial Network (GAN) for doing this task. Particularly, we just enhanced image resolution for image with low resolution. We didn't integrate this process into our system because GAN take a long time to enhance image resolution.
 
-- In [Demo2](./Demo2), we used Multi-task CNN for detecting object. Literally, Multi-task CNN is better SSD because it can capture objects (faces) in various scales, light conditions, head views and even occlusion.
+- In [Demo2](./Demo2), we used Multi-task CNN for detecting object. Literally, Multi-task CNN is better than SSD because it can capture objects (faces) in various scales, light conditions, head views and even occlusion.
 
-For **facial landmark and alignment**, this step was called "data normalization" to identify geometric structure of face and do some alignment of the face based on AFFINE transformation liked translation, scale and rotation to increase accuracy of recognition because face of the same object may vary a lot in direction, scale, viewpoint, etc. Facial landmarks are just facial keypoints that capture the key structure of face before doing face alignment. There are 2 implementation of facial landmarks: 68 landmark points and 5 landmark points provided by Davis King in `Dlib` library.
+For **facial landmark and alignment**, this step was called "data normalization" to identify geometric structure of face and do some alignment of the face based on AFFINE transformation liked translation, scale and rotation to increase accuracy of recognition because face of the same object may vary a lot in direction, scale, viewpoint, etc. Facial landmarks are just facial keypoints that capture the key structure of face before doing face alignment. There are 2 implementation of facial landmarks: 68 landmark points and 5 landmark points provided by Davis King in `Dlib` library. Output of this step is the face was aligned to the center of image, headed directly at front view, and scaled to such identical size.
 
 For **embedding image**: we used pretrained OpenFace model in OpenCV to extract 128-d embedding vector of a face to discriminate it with objects in different classes where each class is a distintive identity (e.g. name, ID, etc) belonging to 1 object.
 
