@@ -27,6 +27,9 @@ Training SVM for identifying objects: `train_model.py`.
 Face recognition: [recognize.py](recognize.py) for image and [recognize_face_video.py](recognize_face_video.py) for video.
 
 # Dataset:
+![adrian](./Demo1/dataset/adrian/00000.png)
+![Model_Diagram](./Model_Diagram.png)
+
 <table>
     <tr>
         <th>Object</th>
@@ -35,7 +38,7 @@ Face recognition: [recognize.py](recognize.py) for image and [recognize_face_vid
     <tr>
         <td>
             <figure>
-                <img src="Demo1/dataset/adrian/00000.png" alt="adrian" width="50" height="">
+                <img src="./Demo1/dataset/adrian/00000.png" alt="adrian" width="50" height="">
                 <figcaption>adrian</figcaption>
             </figure>
         </td>
