@@ -151,9 +151,9 @@ python recognize_faces.py --image Input/1.jpg # path to input image \
 ```
 
 # Results:
-<img src="Output/output_13.jpg" width="80%">
-<img src="Output/output_21.jpg" width="80%">
+<img src="Output/output_4.jpg" width="80%">
 <img src="Output/output_25.jpg" width="80%">
+<img src="Output/output_21.jpg" width="80%">
 
 
 # References:
