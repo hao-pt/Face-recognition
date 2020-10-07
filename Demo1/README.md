@@ -27,9 +27,6 @@ Training SVM for identifying objects: `train_model.py`.
 Face recognition: [recognize.py](recognize.py) for image and [recognize_face_video.py](recognize_face_video.py) for video.
 
 # Dataset:
-![adrian](./Demo1/dataset/adrian/00000.png)
-![Model_Diagram](./Model_Diagram.png)
-
 <table>
     <tr>
         <th>Object</th>
@@ -38,7 +35,7 @@ Face recognition: [recognize.py](recognize.py) for image and [recognize_face_vid
     <tr>
         <td>
             <figure>
-                <img src="./Demo1/dataset/adrian/00000.png" alt="adrian" width="50" height="">
+                <img src="./dataset/adrian/00000.png" alt="adrian" width="150">
                 <figcaption>adrian</figcaption>
             </figure>
         </td>
@@ -49,7 +46,7 @@ Face recognition: [recognize.py](recognize.py) for image and [recognize_face_vid
     <tr>
         <td>
             <figure>
-                <img src="Demo1/dataset/taylor/00001.jpg" alt="taylor" width="50" height="">
+                <img src="./dataset/taylor/00005.jpg" alt="taylor" width="150">
                 <figcaption>taylor</figcaption>
             </figure>
         </td>
@@ -60,7 +57,7 @@ Face recognition: [recognize.py](recognize.py) for image and [recognize_face_vid
     <tr>
         <td>
             <figure>
-                <img src="Demo1/dataset/taylor/00001.jpg" alt="justin" width="50" height="">
+                <img src="./dataset/justin_bieber/00001.jpg" alt="justin" width="150" height="">
                 <figcaption>justin_bieber</figcaption>
             </figure>
         </td>
@@ -71,7 +68,7 @@ Face recognition: [recognize.py](recognize.py) for image and [recognize_face_vid
     <tr>
         <td>
             <figure>
-                <img src="Demo1/dataset/obama/00001.jpg" alt="obama" width="50" height="">
+                <img src="./dataset/obama/00001.jpg" alt="obama" width="150" height="">
                 <figcaption>obama</figcaption>
             </figure>
         </td>
@@ -82,7 +79,7 @@ Face recognition: [recognize.py](recognize.py) for image and [recognize_face_vid
     <tr>
         <td>
             <figure>
-                <img src="Demo1/dataset/unknown/ian_malcolm.jpg" alt="ian" width="50" height="">
+                <img src="./dataset/unknown/ian_malcolm.jpg" alt="ian" width="150" height="">
                 <figcaption>unknown</figcaption>
             </figure>
         </td>
