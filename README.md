@@ -36,9 +36,16 @@ Team members:
 ## Basic procedures:
 ![Model_Diagram](./Model_Diagram.png)
 
-In [Demo1](./Demo1), we adopted SSD for detecting object. We also used image enhancement resolution likes Ganerative Aversarial Network (GAN) for doing this task. Particularly, we just enhanced image resolution for image with low resolution. We didn't integrate this process into our system because GAN take a long time to enhance image resolution.
+For human detector:
+- In [Demo1](./Demo1), we adopted SSD for detecting object. We also used image enhancement resolution likes Ganerative Aversarial Network (GAN) for doing this task. Particularly, we just enhanced image resolution for image with low resolution. We didn't integrate this process into our system because GAN take a long time to enhance image resolution.
 
-In [Demo2](./Demo2), we used Multi-task CNN for detecting object. Literally, Multi-task CNN is better SSD because it can capture objects (faces) in various scales, light conditions, head views and even occlusion. 
+- In [Demo2](./Demo2), we used Multi-task CNN for detecting object. Literally, Multi-task CNN is better SSD because it can capture objects (faces) in various scales, light conditions, head views and even occlusion.
+
+For facial landmark and alignment, this step was called "data normalization" to identify geometric structure of face and do some alignment of the face based on AFFINE transformation liked translation, scale and rotation to increase accuracy of recognition because face of the same object may vary a lot about direction, scale, viewpoint, etc. Landmark is just facial keypoints that captures the key structure of face before doing face alignment. There are 2 implementation of facial landmarks: 68 landmark points and 5 landmark points provided by Davis King in `Dlib` library.
+
+For embedding image: we used pretrained OpenFace models in OpenCV to extract 128-d embedding vector of a face.
+
+For classification, output embeddings were fed to SVM classifier to recognize objects.
 
 ## Source code
 You can click at corresponding source liked [Demo1](./Demo1) or [Demo2](./Demo2) where each has its own README.md for clarification.
