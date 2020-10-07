@@ -1,0 +1,6 @@
+imutils
+numpy
+scikit-learn
+matplotlib
+opencv-contrib-python
+face-recognition # dlib
