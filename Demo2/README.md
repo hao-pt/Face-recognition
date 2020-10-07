@@ -26,7 +26,7 @@ Method:
 - `recognize_faces.py`: wrap up all procedures to detect, extract embeddings, recognize object and display output.
 
 # Dataset:
-We used goolge crawler to collect and download data automatically [5] [6].
+We used goolge crawler to collect and download data automatically [5] [6]. Full dataset can be downloaded at [here](https://drive.google.com/file/d/1gqcYiKTy1J-xz_nHwmayANjz5tWxlVt0/view).
 <table>
     <tr>
         <th>Object</th>
