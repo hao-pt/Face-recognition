@@ -36,7 +36,7 @@ Team members:
 ## Basic procedures:
 ![Model_Diagram](./Model_Diagram.png)
 
-For **human detector**:
+For **face detection**:
 - In [Demo1](./Demo1), we adopted SSD for detecting object. We also used image enhancement resolution likes Ganerative Aversarial Network (GAN) for doing this task. Particularly, we just enhanced image resolution for image with low resolution. We didn't integrate this process into our system because GAN take a long time to enhance image resolution.
 
 - In [Demo2](./Demo2), we used Multi-task CNN for detecting object. Literally, Multi-task CNN is better SSD because it can capture objects (faces) in various scales, light conditions, head views and even occlusion.
@@ -45,7 +45,7 @@ For **facial landmark and alignment**, this step was called "data normalization"
 
 For **embedding image**: we used pretrained OpenFace model in OpenCV to extract 128-d embedding vector of a face to discriminate it with objects in different classes where each class is a distintive identity (e.g. name, ID, etc) belonging to 1 object.
 
-For **classification**, output embeddings were fed to SVM classifier to recognize objects.
+For **face recognition**, output embeddings were fed to SVM classifier to recognize objects with corresponding identity.
 
 ## Source code
 You can click at corresponding source liked [Demo1](./Demo1) or [Demo2](./Demo2) where each has its own README.md for clarification.
